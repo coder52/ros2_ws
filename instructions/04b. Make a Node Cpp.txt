@@ -1,0 +1,55 @@
+$ cd ros2_ws
+$ ls
+	build  install  log  src
+$ cd src
+$ ls
+	my_cpp_pkg  my_py_pkg
+$ cd my_cpp_pkg
+$ ls
+	CMakeLists.txt  include  package.xml  src
+$ cd src
+$ touch my_first_node.cpp
+
+$ cd ~/ros2_ws/src
+$ code .
+
+// WRITE THIS CODE IN THE FILE
+
+#include "rclcpp/rclcpp.hpp"
+ 
+class MyCustomNode : public rclcpp::Node // MODIFY NAME
+{
+public:
+    MyCustomNode() : Node("node_name") // MODIFY NAME
+    {
+    }
+ 
+private:
+};
+ 
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<MyCustomNode>(); // MODIFY NAME
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}
+
+
+$ cd ~/ros2_ws
+$ colcon build
+or
+$ colcon build --packages-select my_cpp_pkg
+
+$ source ~/ros2_ws/install/setup.bash
+
+$ ros2 run my_cpp_pkg cpp_node
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+1.Download VirtualBox and install:
+
+2. Download Ubuntu : https://ubuntu.com/download/desktop
+
+3. Configure a VM in VirtualBox
+
+4. Install Ubuntu in VM
+
+5. Update Ubuntu : sudo apt update
+                   sudo apt upgrade
+
+6. SET Fullscreen options
+   $ sudo apt install build-essential gcc make perl dkms
+   Devices -> Insert Guest Additions CD image and cmd in CD then
+   $ sudo ./VBoxLinuxAdditions.run
+  
+7. Copy Past Function
+
+   Devices -> Shared Clipboard -> Bidirectional
+
+
+
+A. install gedit editor
+   $ sudo apt install gedit
+
+B. install&run Visual Studio Code
+   $ sudo snap install code
+   $ code .

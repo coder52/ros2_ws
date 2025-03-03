@@ -1,0 +1,20 @@
+ros2 run package_name executable_name		: run a node
+ros2 run demo_nodes_cpp talker
+
+ros2 node -h				: info about ros2 node command
+ros2 node list 				: active node list
+ros2 node info	/node_name		: more info about node
+
+
+# CHANGE NODE NAME RUNTIME
+ros2 run my_py_pkg py_node --ros-args -r __node:=abc   # -r = --remap
+
+COLCON BUILD
+colcon build --packages-select	package_name	: build just selected pakages
+colcon build --symlink-install			: 'ross run' runs from direct src folder 
+						   without build it in python but not cpp
+						  (sometimes issues and bug)
+
+SHOW INFO ABOUT THE msg type
+$ ros2 interface show example_interfaces/msg/String
+

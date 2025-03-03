@@ -1,0 +1,22 @@
+$ cd
+$ mkdir ros2_ws
+$ cd ros2_ws
+$ mkdir src
+$ ls
+src
+# if next command not works make sure installed ros-dev-tools package
+$ colcon build 
+Summary: 0 packages finished [0.41s]           
+$ ls
+build  install  log  src
+$ cd install
+ls
+COLCON_IGNORE     local_setup.sh            local_setup.zsh  setup.sh
+local_setup.bash  _local_setup_util_ps1.py  setup.bash       setup.zsh
+local_setup.ps1   _local_setup_util_sh.py   setup.ps1
+$ source setup.bash
+$ cd
+$ gedit .bashrc
+SAVE THIS COMMAND IN THE FILE
+# start workspace
+source ~/ros2_ws/install/setup.bash

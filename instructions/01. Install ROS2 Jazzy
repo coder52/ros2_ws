@@ -1,0 +1,20 @@
+1. Fallow instractions on this page
+
+   https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+
+2. Setup environment
+
+   $ sudo apt install gedit
+   $ gedit .bashrc
+  save this line in opened page 
+  source /opt/ros/jazzy/setup.bash
+
+3. RUN first ROS2 program for validation that ROS2 is working
+  in a terminal run this command
+   $ ros2 run demo_nodes_cpp talker
+  you have to see Hello World
+  in another terminal run 
+   $ ros2 run demo_nodes_cpp listener
+  you MUST see I heard: [Hello World: number]
+  otherwise your ROS2 is not working properly
+   ctrl+c

@@ -1,0 +1,44 @@
+MAKE PYTHON PACKAGE
+
+$ cd ros2_ws/src/
+$ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
+$ ls
+my_py_pkg
+
+# INSTALL VS_CODE
+sudo snap install code
+# RUN VS_CODE
+cd ~/ros2_ws/src
+$ code .
+
+BUILD PACKAGE
+$ cd ~/ros2_ws
+$ colcon build
+OR IF YOU WANT TO Build JUST my_py_pkg YOU CAN USE THIS COMMAND
+$ colcon build --packages-select my_py_pkg
+
+____________________________________________________
+MAKE C++ PACKAGE
+
+$ cd ros2_ws/src
+$ ros2 pkg create my_cpp_pkg --build-type ament_cmake --dependencies rclcpp
+cd ~/ros2_ws/src
+code .
+
+BUILD PACKAGES AGAIN
+$ cd ~/ros2_ws
+$ colcon build
+OR IF YOU WANT TO Build JUST my_cpp_pkg YOU CAN USE THIS COMMAND
+$ colcon build --packages-select my_cpp_pkg
+
+
+
+
+NOTE!
+DONT FORGET 
+# start ros2 jazzy
+source /opt/ros/jazzy/setup.bash
+# start workspace
+source ~/ros2_ws/install/setup.bash
+
+
