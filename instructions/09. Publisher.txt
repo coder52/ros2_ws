@@ -1,0 +1,21 @@
+$ cd ros2_ws/src/my_py_pkg/my_py_pkg
+$ touch robot_news_station
+$ chmod +x robot_news_station.py 
+$ cd ../..
+$ code .
+
+##########
+WRITE CODE 
+##########
+
+$ cd ros2_ws
+$ colcon build --packages-select my_py_pkg --symlink-install
+
+open new terminal and
+$ ros2 run my_py_pkg robot_news_station
+$ ros2 node list
+$ ros2 node info /robot_news_station
+
+open new terminal and
+$ ros2 topic list
+$ ros2 topic echo /robot_news

@@ -18,3 +18,6 @@ colcon build --symlink-install			: 'ross run' runs from direct src folder
 SHOW INFO ABOUT THE msg type
 $ ros2 interface show example_interfaces/msg/String
 
+SHOW WHAT PUBLISHER SENDS
+$ ros2 topic echo /executable_name
+

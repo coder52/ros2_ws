@@ -1,0 +1,20 @@
+[1.808s] Invoking command in '/home/sahin/ros2_ws/build/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sahin/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahin/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sahin/ros2_ws/build/my_py_pkg/build --no-deps symlink_data --force
+[2.248s] running develop
+[2.499s] running egg_info
+[2.525s] writing my_py_pkg.egg-info/PKG-INFO
+[2.526s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[2.526s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[2.526s] writing requirements to my_py_pkg.egg-info/requires.txt
+[2.526s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[2.566s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.570s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.603s] running build_ext
+[2.603s] Creating /home/sahin/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my-py-pkg.egg-link (link to .)
+[2.605s] Installing py_node script to /home/sahin/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.607s] Installing robot_news_station script to /home/sahin/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.607s] 
+[2.607s] Installed /home/sahin/ros2_ws/build/my_py_pkg
+[2.607s] running symlink_data
+[2.607s] symbolically linking /home/sahin/ros2_ws/build/my_py_pkg/resource/my_py_pkg -> /home/sahin/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[2.608s] symbolically linking /home/sahin/ros2_ws/build/my_py_pkg/package.xml -> /home/sahin/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[2.666s] Invoked command in '/home/sahin/ros2_ws/build/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/sahin/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sahin/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sahin/ros2_ws/build/my_py_pkg/build --no-deps symlink_data --force
